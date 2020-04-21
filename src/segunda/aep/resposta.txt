@@ -1,0 +1,28 @@
+1)	 Explicar o conceito de encapsulamento (métodos e atributos), destacando seu propósito.
+
+	O encapsulamento é o processo utilizado para proteger os campos e operações de uma classe (atributos e métodos),
+permitindo que apenas os membros públicos - em Java métodos Get / Set - sejam acessados pelos usuários de determinada classe.
+	O encapsulamento esconde detalhes de implementação do objeto (métodos) e o que sobra visível é a sua interface,
+isto é, o conjunto de todas as mensagens a que ele pode responder.
+
+Exemplo:
+private String atributo1 = new String();  
+private String atributo2 = new String();  
+public String getAtributo1(){  
+  return this.atributo1;  
+}  
+public String getAtributo2(){  
+  return this.atributo2;  
+}
+
+Quando as variáveis forem private só poderá ser modificada as variáveis pelos métodos set, e nos métodos pode ser colocado restrições de acordo com a classe.
+
+
+2)	Explicar como o uso do encapsulamento em conjunto com métodos modificadores (como os setters) podem promover o reuso de código.
+
+Imagine que você tenha uma classe sem getter e setter e em várias linhas do seu projeto você faz uso do atributo diretamente,
+sem o getter ou setter. Ao precisar fazer uma manutenção você teria que mudar todas essas linhas, manualmente. Agora se tivesse o getter e setter,
+seria apenas necessário mudar a função getter ou setter, e a mudança ia refletir em todos os seus usos.
+
+
+REFERENCIA: https://www.devmedia.com.br/encapsulamento-polimorfismo-heranca-em-java/12991
