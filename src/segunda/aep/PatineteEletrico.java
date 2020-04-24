@@ -29,7 +29,7 @@ public class PatineteEletrico {
 		}
 	}
  
-	public boolean pesquisaEstadoCasa() {
+	public boolean pesquisaPatineteEletrico() {
 		try {
 			this.verificarSituacaoDoPatinete();
 			this.avisar();
